@@ -9,6 +9,7 @@ pipeline {
                steps{
                    script{
                     echo 'first time building'
+                    sh 'cd demo'
                     sh 'mvn package'
                    }
                }
